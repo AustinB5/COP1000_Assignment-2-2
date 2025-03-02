@@ -1,18 +1,7 @@
-entrypoint = "main.py"
-modules = ["python-3.10:v18-20230807-322e88b"]
+# Assigning the variables
+myCurrentAge = 21  # Replace 25 with your current age
+currentYear = 2003  # The current year
 
-[nix]
-channel = "stable-23_05"
-
-[env]
-VIRTUAL_ENV = "$REPL_HOME/.pythonlibs"
-
-[unitTest]
-language = "python3"
-
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
-
-[deployment]
-run = ["python3", "main.py"]
-deploymentTarget = "cloudrun"
+# Print the variables to ensure the output is correct
+print("My current age is:", myCurrentAge)
+print("The current year is:", currentYear)
